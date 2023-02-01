@@ -1,21 +1,21 @@
 let dataBlogPosts = [];
-// const url =
-//   "https://api.kontenbase.com/query/api/v1/7f81c3a1-9695-4797-ae79-98485cb46070/posts";
+const url =
+  "https://api.kontenbase.com/query/api/v1/7f81c3a1-9695-4797-ae79-98485cb46070/posts";
 
-// const blogPostsSectionElement = document.getElementById("blog-posts");
+const blogPostsSectionElement = document.getElementById("blog-posts");
 
 // function runApp() {
 //   getTodos();
 // }
 
-// async function getTodos() {
-//   const response = await fetch(url);
-//   const blogPosts = await response.json();
+async function getTodos() {
+  const response = await fetch(url);
+  const blogPosts = await response.json();
 
-//   dataBlogPosts = blogPosts;
+  dataBlogPosts = blogPosts;
 
-//   renderBlogPosts();
-// }
+  renderBlogPosts();
+}
 
 // function renderBlogPosts() {
 //   dataBlogPosts.forEach((blogPost) => {
